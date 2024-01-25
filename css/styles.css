@@ -145,16 +145,21 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    /*homework 3*/
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
 }
 
-.buttons-p:hover {
-    color: #FFFFFFFF;
-    background-color: #404BBF;
-}
-
+.buttons-p:hover,
 .buttons-p:focus {
     color: #FFFFFFFF;
     background-color: #404BBF;
+    /*homework 3*/
+    border: 1px solid transparent;
+    /*homework 4*/
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Homework 3 */
@@ -188,6 +193,8 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-flex {
@@ -305,6 +312,9 @@ img {
 .three-list-element {
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .three-div {
@@ -349,20 +359,6 @@ img {
     margin-bottom: 72px;
 }
 
-.portfolio-buttons {
-    padding: 12px 24px;
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
-}
-
-.portfolio-buttons:hover {
-    border: 1px solid transparent;
-}
-
-.portfolio-buttons:focus {
-    border: 1px solid transparent;
-}
-
 .portfolio-list-two {
     display: flex;
     flex-wrap: wrap;
@@ -384,3 +380,59 @@ img {
 .portfolio-div-title {
     margin-bottom: 8px;
 }
+
+/*Homework 4*/
+
+.one-div-icon-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.one-icon-svg {
+    width: 64px;
+    height: 64px;
+}
+
+.three-ul-svg {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+.three-ul-element-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+.three-link-svg {
+    height: 100%;
+    width: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.three-svg {
+    fill: #f4f4fd;
+    width: 16px;
+    height: 16px;
+  }
+
+.portfolio-link {
+    width: calc((100%-48px) / 3);
+    display: block;
+  }
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
