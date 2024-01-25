@@ -1,16 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-    --primary-brand-color: #4d5ae5;
-    --pressed-state-color: #404bbf;
-    --dark-color: #2e2f42;
-    --success-color: #31d0aa;
-    --text-color: #434455;
-    --subtle-text-color: #8e8f99;
-    --accent-color: #e7e9fc;
-    --light-color: #f4f4fd;
-    --modal-overlay-color: #2e2f42;
-    --hero-background-color: #2e2f42;
-    --white-background-color: #ffffff;
-    --modal-background-color: #fcfcfc;
+    --main-blue: #2196f3;
+    --purple: #4d5ae5;
+    --navy-blue: #2e2f42;
+    --grey-paragraphs: #434455;
+    --off-white: #f4f4fd;
+    --white: #fff;
 }
 
 body {
@@ -454,13 +454,12 @@ img {
 }
 
 .four-section-header {
-    color: #2e2f42;
-    text-align: center;
+    color: var(--navy-blue);
     font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 111.111%;
+    font-weight: 700px;
+    line-height: 1.11;
     letter-spacing: 0.72px;
+    text-align: center;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
@@ -472,9 +471,9 @@ img {
 }
 
 .four-section-list-element {
+    background-color: #fff;
     width: 168px;
     height: 88px;
-    width: calc((100% - 120px) / 6);
 }
 
 .four-link {
