@@ -1,11 +1,18 @@
-:root{
-    --brand-color: #FFFFFFFF;
-    --blue: #4d5ae5;
-    --dark-blue: #2e2f42;
-    --more-blue: #434455;
+:root {
+    --primary-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --dark-color: #2e2f42;
+    --success-color: #31d0aa;
+    --text-color: #434455;
+    --subtle-text-color: #8e8f99;
+    --accent-color: #e7e9fc;
     --light-color: #f4f4fd;
-    --button-color: #4d5ae5;
+    --modal-overlay-color: #2e2f42;
+    --hero-background-color: #2e2f42;
+    --white-background-color: #ffffff;
+    --modal-background-color: #fcfcfc;
 }
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -58,18 +65,6 @@ body {
 
 .address-a:focus {
     color: #404bbf;
-}
-
-.section-title {
-    background-color: #2e2f42;
-}
-
-.h-one-section-title {
-    color: #ffffff;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
 }
 
 .button-title {
@@ -184,7 +179,7 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 /*Header*/
 img {
@@ -234,14 +229,23 @@ img {
 /*Section Zero*/
 
 .zero-section {
+    background-color: #2e2f42;
     padding: 188px 0;
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-header.jpg);
 }
 
 .zero-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
     max-width: 496px;
 }
 
@@ -403,12 +407,12 @@ img {
     display: flex;
     justify-content: center;
     gap: 24px;
-  }
+}
 
 .three-ul-element-svg {
     width: 40px;
     height: 40px;
-  }
+}
 
 .three-link-svg {
     height: 100%;
@@ -418,21 +422,133 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
+.three-link-svg:hover,
+.three-link-svg:focus {
+    background-color: #404bbf;
+}
 
 .three-svg {
     fill: #f4f4fd;
     width: 16px;
     height: 16px;
-  }
+}
 
 .portfolio-link {
     width: calc((100%-48px) / 3);
     display: block;
-  }
+}
 
 .portfolio-link:hover,
 .portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  }
+}
+
+/*Section 4*/
+
+.four-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.four-section-header {
+    margin-bottom: 72px;
+    color: #2e2f42;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.four-section-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.four-section-list-element {
+    width: 168px;
+    height: 88px;
+}
+
+.four-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8e8f99;
+}
+
+.four-link:hover,
+.four-link:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+}
+
+.four-svg {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+}
+
+/*Footer social-media*/
+
+.footer-div {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social-media-div {
+    margin-right: 120px;
+}
+  
+.footer-social-media-p {
+    margin-bottom: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffffff;
+}
+  
+.footer-ul-list-svg {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+  
+.footer-list-svg {
+    width: 40px;
+    height: 40px;
+}
+  
+.footer-link-svg {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.footer-link-svg:hover,
+.footer-link-svg:focus {
+    background-color: #31d0aa;
+}
+  
+.footer-svg {
+    fill: #f4f4fd;
+    width: 24px;
+    height: 24px;
+}
